@@ -31,6 +31,6 @@ public class HomeController {
 		// we are querying database for employees
 		List<Employee> employees = empRepo.findAll();
 		model.addAttribute("employees", employees);
-		return "home";
+		return "main/home";
 	}
 }
