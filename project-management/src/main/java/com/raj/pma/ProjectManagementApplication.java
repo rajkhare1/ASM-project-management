@@ -1,17 +1,16 @@
 package com.raj.pma;
 
-import java.util.Arrays;
-
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 import com.raj.pma.dao.EmployeeRepository;
 import com.raj.pma.dao.ProjectRepository;
-import com.raj.pma.entities.Employee;
-import com.raj.pma.entities.Project;
+import com.raj.pma.springExample.Car;
+import com.raj.pma.springExample.Door;
+import com.raj.pma.springExample.Engine;
+import com.raj.pma.springExample.Tires;
 
 @SpringBootApplication
 public class ProjectManagementApplication {
@@ -25,6 +24,8 @@ public class ProjectManagementApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ProjectManagementApplication.class, args);
 	}
+	
+	
 	
 	
 //	@Bean

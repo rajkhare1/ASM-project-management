@@ -16,9 +16,14 @@ import com.raj.pma.dao.ProjectRepository;
 import com.raj.pma.dto.ChartData;
 import com.raj.pma.dto.EmployeeProject;
 import com.raj.pma.entities.Project;
+import com.raj.pma.springExample.Car;
 
 @Controller
 public class HomeController {
+	
+	@Autowired
+	Car car; 
+	
 	
 	@Autowired
 	ProjectRepository proRepo;
