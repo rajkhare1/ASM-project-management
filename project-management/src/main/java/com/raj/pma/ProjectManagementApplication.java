@@ -3,16 +3,11 @@ package com.raj.pma;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
 
 import com.raj.pma.dao.EmployeeRepository;
 import com.raj.pma.dao.ProjectRepository;
-import com.raj.pma.springExample.Car;
-import com.raj.pma.springExample.Door;
-import com.raj.pma.springExample.Engine;
-import com.raj.pma.springExample.Tires;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"com.raj.pma", "com.raj.utils"})
 public class ProjectManagementApplication {
 	
 	@Autowired
