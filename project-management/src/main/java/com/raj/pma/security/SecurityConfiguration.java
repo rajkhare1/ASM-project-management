@@ -23,18 +23,23 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 //		auth.inMemoryAuthentication()
 		auth.jdbcAuthentication().dataSource(datasource)
-		    .withDefaultSchema()
-			.withUser("rajkhare1")
-				.password("efforts007")
-				.roles("USER")
-			.and()
-			.withUser("richa")
-				.password("efforts")
-				.roles("USER")
-			.and()
-			.withUser("admin")
-			 	.password("adming")
-			   	.roles("ADMIN");
+//		    .withDefaultSchema()
+//			.withUser("rajkhare1")
+//				.password("efforts007")
+//				.roles("USER")
+//			.and()
+//			.withUser("richa")
+//				.password("efforts")
+//				.roles("USER")
+//			.and()
+//			.withUser("admin")
+//			 	.password("adming")
+//			   	.roles("ADMIN");
+		
+		   .usersByUsernameQuery("select username,password, enabled "
+		   		+ "from users where username=?")
+		   .authoritiesByUsernameQuery("select username, authority "
+		   		+ "from authorities where username=?");
 	}
 
 	@Bean
