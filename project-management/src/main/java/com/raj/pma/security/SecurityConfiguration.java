@@ -53,10 +53,12 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	
 	protected void configure(HttpSecurity http) throws Exception {
 		http.authorizeRequests()
-			.antMatchers("/projects/new").hasAnyRole("ADMIN")
-			.antMatchers("/projects/save").hasAnyRole("ADMIN")
-			.antMatchers("/employees/new").hasAnyRole("ADMIN")
-			.antMatchers("/employees/save").hasAnyRole("ADMIN")
+			.antMatchers("/projects/new").hasRole("ADMIN")
+			.antMatchers("/projects/save").hasRole("ADMIN")
+			.antMatchers("/employees/new").hasRole("ADMIN")
+			.antMatchers("/employees/save").hasRole("ADMIN")
+//			.antMatchers("/employees/new").hasAuthority("ADMIN")
+//			.antMatchers("/employees/save").hasAuthority("ADMIN")
 //			.antMatchers("/h2_console/**").permitAll()
 //			.antMatchers("/").authenticated().and().formLogin();
 			.antMatchers("/","/**").permitAll()

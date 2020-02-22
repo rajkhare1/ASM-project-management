@@ -1,40 +1,1251 @@
-2020-02-12 07:56:10.966  INFO 1640 --- [restartedMain] c.raj.pma.ProjectManagementApplication   : Starting ProjectManagementApplication on Rajs-MacBook-Air.local with PID 1640 (/Users/rajkhare/git/ASM-project-management/project-management/target/classes started by rajkhare in /Users/rajkhare/git/ASM-project-management/project-management)
-2020-02-12 07:56:10.972 DEBUG 1640 --- [restartedMain] c.raj.pma.ProjectManagementApplication   : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
-2020-02-12 07:56:10.973  INFO 1640 --- [restartedMain] c.raj.pma.ProjectManagementApplication   : The following profiles are active: dev
-2020-02-12 07:56:11.077  INFO 1640 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-02-12 07:56:11.078  INFO 1640 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-02-12 07:56:12.613  INFO 1640 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2020-02-12 07:56:12.749  INFO 1640 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 118ms. Found 2 repository interfaces.
-2020-02-12 07:56:13.476  INFO 1640 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$dadb343b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-02-12 07:56:14.355  INFO 1640 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-02-12 07:56:14.588  INFO 1640 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3510 ms
-2020-02-12 07:56:15.190  INFO 1640 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-02-12 07:56:17.262  INFO 1640 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-02-12 07:56:18.530  INFO 1640 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@13955586, org.springframework.security.web.context.SecurityContextPersistenceFilter@1002d43d, org.springframework.security.web.header.HeaderWriterFilter@1a99e5f0, org.springframework.security.web.authentication.logout.LogoutFilter@51b22d5c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@188e75b0, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@19cdce08, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3c94533f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@713e73e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@44bcf39f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@30328b3f, org.springframework.security.web.session.SessionManagementFilter@34a1406e, org.springframework.security.web.access.ExceptionTranslationFilter@1a1382f4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7ea31409]
-2020-02-12 07:56:18.881  INFO 1640 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-02-12 07:56:18.965  WARN 1640 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-02-12 07:56:19.404  INFO 1640 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-02-12 07:56:19.415  INFO 1640 --- [restartedMain] c.raj.pma.ProjectManagementApplication   : Started ProjectManagementApplication in 9.174 seconds (JVM running for 15.641)
-2020-02-12 07:58:57.506  INFO 1640 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-02-12 07:58:57.509  INFO 1640 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-02-12 07:58:57.528  INFO 1640 --- [Thread-4] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-199]
-2020-02-12 07:59:02.740  INFO 1640 --- [restartedMain] c.raj.pma.ProjectManagementApplication   : Starting ProjectManagementApplication on Rajs-MacBook-Air.local with PID 1640 (/Users/rajkhare/git/ASM-project-management/project-management/target/classes started by rajkhare in /Users/rajkhare/git/ASM-project-management/project-management)
-2020-02-12 07:59:02.741 DEBUG 1640 --- [restartedMain] c.raj.pma.ProjectManagementApplication   : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
-2020-02-12 07:59:02.741  INFO 1640 --- [restartedMain] c.raj.pma.ProjectManagementApplication   : The following profiles are active: dev
-2020-02-12 07:59:03.154  INFO 1640 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2020-02-12 07:59:03.167  INFO 1640 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 2 repository interfaces.
-2020-02-12 07:59:03.301  INFO 1640 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$dadb343b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-02-12 07:59:03.417  INFO 1640 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-02-12 07:59:03.448  INFO 1640 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 704 ms
-2020-02-12 07:59:03.566  INFO 1640 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-02-12 07:59:03.732  INFO 1640 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-02-12 07:59:03.928  INFO 1640 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1b133ac4, org.springframework.security.web.context.SecurityContextPersistenceFilter@5e36c96e, org.springframework.security.web.header.HeaderWriterFilter@31c89e6c, org.springframework.security.web.authentication.logout.LogoutFilter@69f06dc9, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1680b757, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1e5a922, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5249b49b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1680299f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@634eeedd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@272cdb68, org.springframework.security.web.session.SessionManagementFilter@bdd3284, org.springframework.security.web.access.ExceptionTranslationFilter@50d315b2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@257a1d5f]
-2020-02-12 07:59:04.022  INFO 1640 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-02-12 07:59:04.029  WARN 1640 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-02-12 07:59:04.158  INFO 1640 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-02-12 07:59:04.159  INFO 1640 --- [restartedMain] c.raj.pma.ProjectManagementApplication   : Started ProjectManagementApplication in 6.462 seconds (JVM running for 180.38)
-2020-02-12 07:59:04.165  INFO 1640 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2020-02-12 07:59:06.465  INFO 1640 --- [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2020-02-12 07:59:06.470  INFO 1640 --- [RMI TCP Connection(10)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-02-12 07:59:06.473  INFO 1640 --- [RMI TCP Connection(10)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-02-12 07:59:06.483  INFO 1640 --- [RMI TCP Connection(10)-127.0.0.1] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-199]
+2020-02-22 07:47:10.941  INFO 1315 --- [restartedMain] c.raj.pma.ProjectManagementApplication   : Starting ProjectManagementApplication on Rajs-MacBook-Air.local with PID 1315 (/Users/rajkhare/git/ASM-project-management/project-management/target/classes started by rajkhare in /Users/rajkhare/git/ASM-project-management/project-management)
+2020-02-22 07:47:10.948 DEBUG 1315 --- [restartedMain] c.raj.pma.ProjectManagementApplication   : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2020-02-22 07:47:10.949  INFO 1315 --- [restartedMain] c.raj.pma.ProjectManagementApplication   : The following profiles are active: dev
+2020-02-22 07:47:11.048  INFO 1315 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-22 07:47:11.049  INFO 1315 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-22 07:47:12.493  INFO 1315 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-02-22 07:47:12.642  INFO 1315 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 127ms. Found 3 repository interfaces.
+2020-02-22 07:47:13.393  INFO 1315 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ff2b8a82] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-22 07:47:14.299  INFO 1315 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-22 07:47:14.520  INFO 1315 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3471 ms
+2020-02-22 07:47:18.050  INFO 1315 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-22 07:47:19.122  INFO 1315 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1eab2872, org.springframework.security.web.context.SecurityContextPersistenceFilter@24ed895e, org.springframework.security.web.header.HeaderWriterFilter@64ca20bb, org.springframework.security.web.csrf.CsrfFilter@7762c382, org.springframework.security.web.authentication.logout.LogoutFilter@53b968f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@29fab059, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3de74210, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3c07a6d9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@235f889e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@50ababab, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@77a8e61e, org.springframework.security.web.session.SessionManagementFilter@19af3579, org.springframework.security.web.access.ExceptionTranslationFilter@1e728128, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@39f34afc]
+2020-02-22 07:47:19.429  INFO 1315 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-22 07:47:19.525  WARN 1315 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-22 07:47:19.930  INFO 1315 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-22 07:47:20.011  INFO 1315 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-22 07:47:20.020  INFO 1315 --- [restartedMain] c.raj.pma.ProjectManagementApplication   : Started ProjectManagementApplication in 9.805 seconds (JVM running for 16.323)
+2020-02-22 07:49:23.696  INFO 1315 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-22 07:49:23.717  INFO 1315 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2020-02-22 07:49:23.784 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 07:49:23.789 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.HomeController.displayHome () with arguments[s]= [{}]
+2020-02-22 07:49:23.789 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 07:49:24.469 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.HomeController.displayHome () with arguments[s]= [{versionNumber=dev, projects=[com.raj.pma.entities.Project@786f12aa, com.raj.pma.entities.Project@85d6608], projectStatusCount=[{"value":1,"label":"INPROGRESS"},{"value":1,"label":"NOTSTARTED"}], employeesProjectCount=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@22e6ee15, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@48a02502, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@6e0e388]}]
+2020-02-22 07:49:24.470 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 07:52:18.020 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 07:52:18.020 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.HomeController.displayHome () with arguments[s]= [{}]
+2020-02-22 07:52:18.021 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 07:52:18.030 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.HomeController.displayHome () with arguments[s]= [{versionNumber=dev, projects=[com.raj.pma.entities.Project@791cf3ee, com.raj.pma.entities.Project@2b5140a8], projectStatusCount=[{"value":1,"label":"INPROGRESS"},{"value":1,"label":"NOTSTARTED"}], employeesProjectCount=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@2e6fadb1, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@110f4311, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@2f77a64f]}]
+2020-02-22 07:52:18.030 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 07:55:25.701 DEBUG 1315 --- [http-nio-8080-exec-5] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 07:55:25.702 DEBUG 1315 --- [http-nio-8080-exec-5] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.displayEmployees () with arguments[s]= [{}]
+2020-02-22 07:55:25.703 DEBUG 1315 --- [http-nio-8080-exec-5] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 07:55:25.712 DEBUG 1315 --- [http-nio-8080-exec-5] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.displayEmployees () with arguments[s]= [{employees=[com.raj.pma.entities.Employee@15cb719d, com.raj.pma.entities.Employee@4b2ddb3d, com.raj.pma.entities.Employee@53c066ef]}]
+2020-02-22 07:55:25.713 DEBUG 1315 --- [http-nio-8080-exec-5] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 07:55:27.319 DEBUG 1315 --- [http-nio-8080-exec-8] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 07:55:27.319 DEBUG 1315 --- [http-nio-8080-exec-8] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.ProjectController.displayProjects () with arguments[s]= [{}]
+2020-02-22 07:55:27.320 DEBUG 1315 --- [http-nio-8080-exec-8] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 07:55:27.330 DEBUG 1315 --- [http-nio-8080-exec-8] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.ProjectController.displayProjects () with arguments[s]= [{projects=[com.raj.pma.entities.Project@30160460, com.raj.pma.entities.Project@97b87df]}]
+2020-02-22 07:55:27.330 DEBUG 1315 --- [http-nio-8080-exec-8] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 07:55:28.886 DEBUG 1315 --- [http-nio-8080-exec-10] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 07:55:28.887 DEBUG 1315 --- [http-nio-8080-exec-10] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.HomeController.displayHome () with arguments[s]= [{}]
+2020-02-22 07:55:28.887 DEBUG 1315 --- [http-nio-8080-exec-10] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 07:55:28.899 DEBUG 1315 --- [http-nio-8080-exec-10] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.HomeController.displayHome () with arguments[s]= [{versionNumber=dev, projects=[com.raj.pma.entities.Project@7f344ea4, com.raj.pma.entities.Project@3a58f4a8], projectStatusCount=[{"value":1,"label":"INPROGRESS"},{"value":1,"label":"NOTSTARTED"}], employeesProjectCount=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@1b554a51, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@26abc164, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@499a21fe]}]
+2020-02-22 07:55:28.900 DEBUG 1315 --- [http-nio-8080-exec-10] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 07:56:28.117 DEBUG 1315 --- [http-nio-8080-exec-5] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 07:56:28.117 DEBUG 1315 --- [http-nio-8080-exec-5] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.displayEmployees () with arguments[s]= [{}]
+2020-02-22 07:56:28.117 DEBUG 1315 --- [http-nio-8080-exec-5] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 07:56:28.122 DEBUG 1315 --- [http-nio-8080-exec-5] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.displayEmployees () with arguments[s]= [{employees=[com.raj.pma.entities.Employee@727efef2, com.raj.pma.entities.Employee@65f95b42, com.raj.pma.entities.Employee@793578a1]}]
+2020-02-22 07:56:28.123 DEBUG 1315 --- [http-nio-8080-exec-5] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 07:56:37.234 DEBUG 1315 --- [http-nio-8080-exec-10] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 07:56:37.234 DEBUG 1315 --- [http-nio-8080-exec-10] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.HomeController.displayHome () with arguments[s]= [{}]
+2020-02-22 07:56:37.234 DEBUG 1315 --- [http-nio-8080-exec-10] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 07:56:37.251 DEBUG 1315 --- [http-nio-8080-exec-10] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.HomeController.displayHome () with arguments[s]= [{versionNumber=dev, projects=[com.raj.pma.entities.Project@45bf90f5, com.raj.pma.entities.Project@74b787eb], projectStatusCount=[{"value":1,"label":"INPROGRESS"},{"value":1,"label":"NOTSTARTED"}], employeesProjectCount=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@5bd027bc, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@87e5d4f, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@463f8018]}]
+2020-02-22 07:56:37.252 DEBUG 1315 --- [http-nio-8080-exec-10] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 07:56:41.768 DEBUG 1315 --- [http-nio-8080-exec-6] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 07:56:41.768 DEBUG 1315 --- [http-nio-8080-exec-6] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.SecurityController.register () with arguments[s]= [{}]
+2020-02-22 07:56:41.769 DEBUG 1315 --- [http-nio-8080-exec-6] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 07:56:41.772 DEBUG 1315 --- [http-nio-8080-exec-6] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.SecurityController.register () with arguments[s]= [{userAccount=com.raj.pma.entities.UserAccount@2012999c}]
+2020-02-22 07:56:41.772 DEBUG 1315 --- [http-nio-8080-exec-6] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 07:57:06.521 DEBUG 1315 --- [http-nio-8080-exec-7] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 07:57:06.522 DEBUG 1315 --- [http-nio-8080-exec-7] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.SecurityController.saveUser () with arguments[s]= [{userAccount=com.raj.pma.entities.UserAccount@6ac494b0, org.springframework.validation.BindingResult.userAccount=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.raj.pma.entities.UserAccount@6ac494b0]
+2020-02-22 07:57:06.522 DEBUG 1315 --- [http-nio-8080-exec-7] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 07:57:06.774 DEBUG 1315 --- [http-nio-8080-exec-7] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.SecurityController.saveUser () with arguments[s]= [{userAccount=com.raj.pma.entities.UserAccount@6ac494b0, org.springframework.validation.BindingResult.userAccount=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.raj.pma.entities.UserAccount@6ac494b0]
+2020-02-22 07:57:06.774 DEBUG 1315 --- [http-nio-8080-exec-7] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 07:57:06.793 DEBUG 1315 --- [http-nio-8080-exec-5] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 07:57:06.793 DEBUG 1315 --- [http-nio-8080-exec-5] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.HomeController.displayHome () with arguments[s]= [{}]
+2020-02-22 07:57:06.793 DEBUG 1315 --- [http-nio-8080-exec-5] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 07:57:06.803 DEBUG 1315 --- [http-nio-8080-exec-5] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.HomeController.displayHome () with arguments[s]= [{versionNumber=dev, projects=[com.raj.pma.entities.Project@6143da85, com.raj.pma.entities.Project@242680f], projectStatusCount=[{"value":1,"label":"INPROGRESS"},{"value":1,"label":"NOTSTARTED"}], employeesProjectCount=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@6687e69f, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@31be333d, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@30d4f31e]}]
+2020-02-22 07:57:06.804 DEBUG 1315 --- [http-nio-8080-exec-5] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 07:57:12.432 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 07:57:12.433 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.displayEmployees () with arguments[s]= [{}]
+2020-02-22 07:57:12.433 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 07:57:12.439 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.displayEmployees () with arguments[s]= [{employees=[com.raj.pma.entities.Employee@63025f6b, com.raj.pma.entities.Employee@7dc478fd, com.raj.pma.entities.Employee@2513f5fd]}]
+2020-02-22 07:57:12.439 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 08:13:26.206  WARN 1315 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m40s907ms).
+2020-02-22 08:20:42.160 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 08:20:42.161 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.SecurityController.register () with arguments[s]= [{}]
+2020-02-22 08:20:42.162 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 08:20:42.162 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.SecurityController.register () with arguments[s]= [{userAccount=com.raj.pma.entities.UserAccount@1c258078}]
+2020-02-22 08:20:42.163 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 08:20:44.338 DEBUG 1315 --- [http-nio-8080-exec-3] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 08:20:44.338 DEBUG 1315 --- [http-nio-8080-exec-3] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.SecurityController.register () with arguments[s]= [{}]
+2020-02-22 08:20:44.338 DEBUG 1315 --- [http-nio-8080-exec-3] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 08:20:44.338 DEBUG 1315 --- [http-nio-8080-exec-3] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.SecurityController.register () with arguments[s]= [{userAccount=com.raj.pma.entities.UserAccount@73b92f4d}]
+2020-02-22 08:20:44.338 DEBUG 1315 --- [http-nio-8080-exec-3] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 08:21:03.083 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 08:21:03.083 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.SecurityController.saveUser () with arguments[s]= [{userAccount=com.raj.pma.entities.UserAccount@1ad442ab, org.springframework.validation.BindingResult.userAccount=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.raj.pma.entities.UserAccount@1ad442ab]
+2020-02-22 08:21:03.083 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 08:21:03.197 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.SecurityController.saveUser () with arguments[s]= [{userAccount=com.raj.pma.entities.UserAccount@1ad442ab, org.springframework.validation.BindingResult.userAccount=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.raj.pma.entities.UserAccount@1ad442ab]
+2020-02-22 08:21:03.197 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 08:21:03.205 DEBUG 1315 --- [http-nio-8080-exec-10] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 08:21:03.205 DEBUG 1315 --- [http-nio-8080-exec-10] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.HomeController.displayHome () with arguments[s]= [{}]
+2020-02-22 08:21:03.205 DEBUG 1315 --- [http-nio-8080-exec-10] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 08:21:03.215 DEBUG 1315 --- [http-nio-8080-exec-10] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.HomeController.displayHome () with arguments[s]= [{versionNumber=dev, projects=[com.raj.pma.entities.Project@10634761, com.raj.pma.entities.Project@6e05cfcb], projectStatusCount=[{"value":1,"label":"INPROGRESS"},{"value":1,"label":"NOTSTARTED"}], employeesProjectCount=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@4f76b8fb, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@b64d68c, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@2c114050]}]
+2020-02-22 08:21:03.215 DEBUG 1315 --- [http-nio-8080-exec-10] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 08:21:07.195 DEBUG 1315 --- [http-nio-8080-exec-5] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 08:21:07.195 DEBUG 1315 --- [http-nio-8080-exec-5] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.displayEmployees () with arguments[s]= [{}]
+2020-02-22 08:21:07.196 DEBUG 1315 --- [http-nio-8080-exec-5] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 08:21:07.200 DEBUG 1315 --- [http-nio-8080-exec-5] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.displayEmployees () with arguments[s]= [{employees=[com.raj.pma.entities.Employee@3814ce01, com.raj.pma.entities.Employee@7f038fbc, com.raj.pma.entities.Employee@70025cec]}]
+2020-02-22 08:21:07.200 DEBUG 1315 --- [http-nio-8080-exec-5] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 10:35:28.503  WARN 1315 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h14m2s222ms).
+2020-02-22 10:48:31.158 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 10:48:31.160 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.ProjectController.displayProjects () with arguments[s]= [{}]
+2020-02-22 10:48:31.160 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 10:48:31.166 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.ProjectController.displayProjects () with arguments[s]= [{projects=[com.raj.pma.entities.Project@5ccbe5d5, com.raj.pma.entities.Project@5eae4f41]}]
+2020-02-22 10:48:31.167 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 10:48:48.438 DEBUG 1315 --- [http-nio-8080-exec-9] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 10:48:48.439 DEBUG 1315 --- [http-nio-8080-exec-9] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.displayEmployees () with arguments[s]= [{}]
+2020-02-22 10:48:48.439 DEBUG 1315 --- [http-nio-8080-exec-9] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 10:48:48.444 DEBUG 1315 --- [http-nio-8080-exec-9] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.displayEmployees () with arguments[s]= [{employees=[com.raj.pma.entities.Employee@a08b043, com.raj.pma.entities.Employee@44279a32, com.raj.pma.entities.Employee@4beebd83]}]
+2020-02-22 10:48:48.444 DEBUG 1315 --- [http-nio-8080-exec-9] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 10:50:35.038 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 10:50:35.038 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.HomeController.displayHome () with arguments[s]= [{}]
+2020-02-22 10:50:35.038 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 10:50:35.048 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.HomeController.displayHome () with arguments[s]= [{versionNumber=dev, projects=[com.raj.pma.entities.Project@7f9af411, com.raj.pma.entities.Project@2c881598], projectStatusCount=[{"value":1,"label":"INPROGRESS"},{"value":1,"label":"NOTSTARTED"}], employeesProjectCount=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@117d5a8a, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@5b8e8fe9, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@4a633a68]}]
+2020-02-22 10:50:35.048 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 10:50:39.408 DEBUG 1315 --- [http-nio-8080-exec-8] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 10:50:39.408 DEBUG 1315 --- [http-nio-8080-exec-8] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.displayEmployees () with arguments[s]= [{}]
+2020-02-22 10:50:39.409 DEBUG 1315 --- [http-nio-8080-exec-8] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 10:50:39.414 DEBUG 1315 --- [http-nio-8080-exec-8] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.displayEmployees () with arguments[s]= [{employees=[com.raj.pma.entities.Employee@694c64d6, com.raj.pma.entities.Employee@515f0887, com.raj.pma.entities.Employee@4b4b3c6a]}]
+2020-02-22 10:50:39.414 DEBUG 1315 --- [http-nio-8080-exec-8] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 10:50:46.538 DEBUG 1315 --- [http-nio-8080-exec-9] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 10:50:46.538 DEBUG 1315 --- [http-nio-8080-exec-9] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.ProjectController.displayProjects () with arguments[s]= [{}]
+2020-02-22 10:50:46.538 DEBUG 1315 --- [http-nio-8080-exec-9] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 10:50:46.545 DEBUG 1315 --- [http-nio-8080-exec-9] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.ProjectController.displayProjects () with arguments[s]= [{projects=[com.raj.pma.entities.Project@6a32b7d0, com.raj.pma.entities.Project@67664556]}]
+2020-02-22 10:50:46.545 DEBUG 1315 --- [http-nio-8080-exec-9] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 10:50:58.125  WARN 1315 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s275ms), soft-evicting connections from pool.
+2020-02-22 10:56:13.030  INFO 1315 --- [Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-22 10:56:13.033  INFO 1315 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-22 10:56:18.238  INFO 1315 --- [restartedMain] c.raj.pma.ProjectManagementApplication   : Starting ProjectManagementApplication on Rajs-MacBook-Air.local with PID 1315 (/Users/rajkhare/git/ASM-project-management/project-management/target/classes started by rajkhare in /Users/rajkhare/git/ASM-project-management/project-management)
+2020-02-22 10:56:18.238 DEBUG 1315 --- [restartedMain] c.raj.pma.ProjectManagementApplication   : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2020-02-22 10:56:18.238  INFO 1315 --- [restartedMain] c.raj.pma.ProjectManagementApplication   : The following profiles are active: dev
+2020-02-22 10:56:18.613  INFO 1315 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-02-22 10:56:18.629  INFO 1315 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 3 repository interfaces.
+2020-02-22 10:56:18.720  INFO 1315 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ff2b8a82] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-22 10:56:18.830  INFO 1315 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-22 10:56:18.847  INFO 1315 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 607 ms
+2020-02-22 10:56:19.157  INFO 1315 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-22 10:56:19.320  INFO 1315 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5a37cdf4, org.springframework.security.web.context.SecurityContextPersistenceFilter@25be1298, org.springframework.security.web.header.HeaderWriterFilter@5708dfa5, org.springframework.security.web.csrf.CsrfFilter@c7c5e1d, org.springframework.security.web.authentication.logout.LogoutFilter@27d5fa0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@16105e0, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5782bd1a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1890c9e1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6c1a1add, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7d7e050c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@60efee65, org.springframework.security.web.session.SessionManagementFilter@4b5c2158, org.springframework.security.web.access.ExceptionTranslationFilter@46a1f993, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2c5a8bb5]
+2020-02-22 10:56:19.398  INFO 1315 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-22 10:56:19.406  WARN 1315 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-22 10:56:19.509  INFO 1315 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-22 10:56:19.532  INFO 1315 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-22 10:56:19.533  INFO 1315 --- [restartedMain] c.raj.pma.ProjectManagementApplication   : Started ProjectManagementApplication in 6.336 seconds (JVM running for 2673.159)
+2020-02-22 10:56:19.539  INFO 1315 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-22 10:56:32.089  INFO 1315 --- [Thread-11] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-22 10:56:32.092  INFO 1315 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-22 10:56:37.241  INFO 1315 --- [restartedMain] c.raj.pma.ProjectManagementApplication   : Starting ProjectManagementApplication on Rajs-MacBook-Air.local with PID 1315 (/Users/rajkhare/git/ASM-project-management/project-management/target/classes started by rajkhare in /Users/rajkhare/git/ASM-project-management/project-management)
+2020-02-22 10:56:37.241 DEBUG 1315 --- [restartedMain] c.raj.pma.ProjectManagementApplication   : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2020-02-22 10:56:37.241  INFO 1315 --- [restartedMain] c.raj.pma.ProjectManagementApplication   : The following profiles are active: dev
+2020-02-22 10:56:37.495  INFO 1315 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-02-22 10:56:37.512  INFO 1315 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 3 repository interfaces.
+2020-02-22 10:56:37.658  INFO 1315 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ff2b8a82] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-22 10:56:37.732  INFO 1315 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-22 10:56:37.747  INFO 1315 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 504 ms
+2020-02-22 10:56:37.990  INFO 1315 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-22 10:56:38.175  INFO 1315 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@ddadc11, org.springframework.security.web.context.SecurityContextPersistenceFilter@2094f063, org.springframework.security.web.header.HeaderWriterFilter@628be92a, org.springframework.security.web.csrf.CsrfFilter@316afe4c, org.springframework.security.web.authentication.logout.LogoutFilter@1685ce05, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@f1ce125, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@111523ac, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4c54c3ef, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3d62d8e2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@9db4dd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@749062eb, org.springframework.security.web.session.SessionManagementFilter@466afe7c, org.springframework.security.web.access.ExceptionTranslationFilter@3255e7d4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4cde944a]
+2020-02-22 10:56:38.258  INFO 1315 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-22 10:56:38.267  WARN 1315 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-22 10:56:38.423  INFO 1315 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-22 10:56:38.448  INFO 1315 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-22 10:56:38.449  INFO 1315 --- [restartedMain] c.raj.pma.ProjectManagementApplication   : Started ProjectManagementApplication in 6.245 seconds (JVM running for 2692.074)
+2020-02-22 10:56:38.457  INFO 1315 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-22 10:56:43.894  INFO 1315 --- [Thread-18] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-22 10:56:43.896  INFO 1315 --- [Thread-18] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-22 10:56:49.040  INFO 1315 --- [restartedMain] c.raj.pma.ProjectManagementApplication   : Starting ProjectManagementApplication on Rajs-MacBook-Air.local with PID 1315 (/Users/rajkhare/git/ASM-project-management/project-management/target/classes started by rajkhare in /Users/rajkhare/git/ASM-project-management/project-management)
+2020-02-22 10:56:49.040 DEBUG 1315 --- [restartedMain] c.raj.pma.ProjectManagementApplication   : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2020-02-22 10:56:49.041  INFO 1315 --- [restartedMain] c.raj.pma.ProjectManagementApplication   : The following profiles are active: dev
+2020-02-22 10:56:49.343  INFO 1315 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-02-22 10:56:49.365  INFO 1315 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22ms. Found 3 repository interfaces.
+2020-02-22 10:56:49.489  INFO 1315 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ff2b8a82] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-22 10:56:49.569  INFO 1315 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-22 10:56:49.594  INFO 1315 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 550 ms
+2020-02-22 10:56:49.907  INFO 1315 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-22 10:56:50.053  INFO 1315 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1fc5ce3a, org.springframework.security.web.context.SecurityContextPersistenceFilter@78d69d1b, org.springframework.security.web.header.HeaderWriterFilter@384bea20, org.springframework.security.web.csrf.CsrfFilter@2474f5ad, org.springframework.security.web.authentication.logout.LogoutFilter@531fbab4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@32ae1829, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1f6dc207, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@487e093b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6533067e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24efa12, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3aca18b2, org.springframework.security.web.session.SessionManagementFilter@7b8cd65a, org.springframework.security.web.access.ExceptionTranslationFilter@7a5ce483, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@72300ec8]
+2020-02-22 10:56:50.130  INFO 1315 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-22 10:56:50.139  WARN 1315 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-22 10:56:50.232  INFO 1315 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-22 10:56:50.272  INFO 1315 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-22 10:56:50.274  INFO 1315 --- [restartedMain] c.raj.pma.ProjectManagementApplication   : Started ProjectManagementApplication in 6.268 seconds (JVM running for 2703.899)
+2020-02-22 10:56:50.281  INFO 1315 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-22 10:56:56.885  INFO 1315 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-22 10:56:56.896  INFO 1315 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2020-02-22 10:56:56.902 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 10:56:56.903 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.HomeController.displayHome () with arguments[s]= [{}]
+2020-02-22 10:56:56.903 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 10:56:56.933 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.HomeController.displayHome () with arguments[s]= [{versionNumber=dev, projects=[com.raj.pma.entities.Project@1d49e377, com.raj.pma.entities.Project@501dd360], projectStatusCount=[{"value":1,"label":"INPROGRESS"},{"value":1,"label":"NOTSTARTED"}], employeesProjectCount=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@5b917dcb, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@172e6850, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@27b1f867]}]
+2020-02-22 10:56:56.934 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 10:56:57.626 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 10:56:57.627 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.HomeController.displayHome () with arguments[s]= [{}]
+2020-02-22 10:56:57.627 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 10:56:57.637 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.HomeController.displayHome () with arguments[s]= [{versionNumber=dev, projects=[com.raj.pma.entities.Project@640a2ee5, com.raj.pma.entities.Project@49a963eb], projectStatusCount=[{"value":1,"label":"INPROGRESS"},{"value":1,"label":"NOTSTARTED"}], employeesProjectCount=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@6ba92e, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@c916371, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@264f2725]}]
+2020-02-22 10:56:57.638 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 10:57:10.918  INFO 1315 --- [Thread-25] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-22 10:57:10.919  INFO 1315 --- [Thread-25] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-22 10:57:16.057  INFO 1315 --- [restartedMain] c.raj.pma.ProjectManagementApplication   : Starting ProjectManagementApplication on Rajs-MacBook-Air.local with PID 1315 (/Users/rajkhare/git/ASM-project-management/project-management/target/classes started by rajkhare in /Users/rajkhare/git/ASM-project-management/project-management)
+2020-02-22 10:57:16.059 DEBUG 1315 --- [restartedMain] c.raj.pma.ProjectManagementApplication   : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2020-02-22 10:57:16.059  INFO 1315 --- [restartedMain] c.raj.pma.ProjectManagementApplication   : The following profiles are active: dev
+2020-02-22 10:57:16.336  INFO 1315 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-02-22 10:57:16.354  INFO 1315 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18ms. Found 3 repository interfaces.
+2020-02-22 10:57:16.432  INFO 1315 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ff2b8a82] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-22 10:57:16.509  INFO 1315 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-22 10:57:16.522  INFO 1315 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 458 ms
+2020-02-22 10:57:16.870  INFO 1315 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-22 10:57:16.949  WARN 1315 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityConfiguration' defined in file [/Users/rajkhare/git/ASM-project-management/project-management/target/classes/com/raj/pma/security/SecurityConfiguration.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.raj.pma.security.SecurityConfiguration$$EnhancerBySpringCGLIB$$da54f059]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	BCryp cannot be resolved to a type
+	Syntax error on token "bCryptEncoder", delete this token
+	bCryptEncoder cannot be resolved to a variable
+
+2020-02-22 10:57:16.950  INFO 1315 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-22 10:57:16.964  INFO 1315 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-02-22 10:57:16.995 ERROR 1315 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityConfiguration' defined in file [/Users/rajkhare/git/ASM-project-management/project-management/target/classes/com/raj/pma/security/SecurityConfiguration.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.raj.pma.security.SecurityConfiguration$$EnhancerBySpringCGLIB$$da54f059]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	BCryp cannot be resolved to a type
+	Syntax error on token "bCryptEncoder", delete this token
+	bCryptEncoder cannot be resolved to a variable
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1303) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1197) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at com.raj.pma.ProjectManagementApplication.main(ProjectManagementApplication.java:20) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.raj.pma.security.SecurityConfiguration$$EnhancerBySpringCGLIB$$da54f059]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	BCryp cannot be resolved to a type
+	Syntax error on token "bCryptEncoder", delete this token
+	bCryptEncoder cannot be resolved to a variable
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:184) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1295) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	BCryp cannot be resolved to a type
+	Syntax error on token "bCryptEncoder", delete this token
+	bCryptEncoder cannot be resolved to a variable
+
+	at com.raj.pma.security.SecurityConfiguration.<init>(SecurityConfiguration.java:21) ~[classes/:na]
+	at com.raj.pma.security.SecurityConfiguration$$EnhancerBySpringCGLIB$$da54f059.<init>(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:172) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	... 24 common frames omitted
+
+2020-02-22 10:59:08.848  INFO 1315 --- [restartedMain] c.raj.pma.ProjectManagementApplication   : Starting ProjectManagementApplication on Rajs-MacBook-Air.local with PID 1315 (/Users/rajkhare/git/ASM-project-management/project-management/target/classes started by rajkhare in /Users/rajkhare/git/ASM-project-management/project-management)
+2020-02-22 10:59:08.848 DEBUG 1315 --- [restartedMain] c.raj.pma.ProjectManagementApplication   : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2020-02-22 10:59:08.848  INFO 1315 --- [restartedMain] c.raj.pma.ProjectManagementApplication   : The following profiles are active: dev
+2020-02-22 10:59:09.050  INFO 1315 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-02-22 10:59:09.061  INFO 1315 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 3 repository interfaces.
+2020-02-22 10:59:09.128  INFO 1315 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ff2b8a82] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-22 10:59:09.198  INFO 1315 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-22 10:59:09.209  INFO 1315 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 359 ms
+2020-02-22 10:59:09.420  INFO 1315 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-22 10:59:09.560  INFO 1315 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@55c65d1e, org.springframework.security.web.context.SecurityContextPersistenceFilter@357aeede, org.springframework.security.web.header.HeaderWriterFilter@3791319, org.springframework.security.web.csrf.CsrfFilter@60f92ef, org.springframework.security.web.authentication.logout.LogoutFilter@b7a2d0f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@23e81a4b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@699432fd, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@752dac5e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2904f5a7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@622eca45, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4bbaea59, org.springframework.security.web.session.SessionManagementFilter@4f989528, org.springframework.security.web.access.ExceptionTranslationFilter@65df37a9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5e779c3]
+2020-02-22 10:59:09.626  INFO 1315 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-22 10:59:09.633  WARN 1315 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-22 10:59:09.749  INFO 1315 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-22 10:59:09.772  INFO 1315 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-22 10:59:09.773  INFO 1315 --- [restartedMain] c.raj.pma.ProjectManagementApplication   : Started ProjectManagementApplication in 5.958 seconds (JVM running for 2843.395)
+2020-02-22 10:59:09.779  INFO 1315 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-22 10:59:21.455  INFO 1315 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-22 10:59:21.462  INFO 1315 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-02-22 10:59:21.465 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 10:59:21.466 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.HomeController.displayHome () with arguments[s]= [{}]
+2020-02-22 10:59:21.466 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 10:59:21.492 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.HomeController.displayHome () with arguments[s]= [{versionNumber=dev, projects=[com.raj.pma.entities.Project@11ee512a, com.raj.pma.entities.Project@575c0370], projectStatusCount=[{"value":1,"label":"INPROGRESS"},{"value":1,"label":"NOTSTARTED"}], employeesProjectCount=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@41a67f68, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@7f8d2ec8, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@25701a2c]}]
+2020-02-22 10:59:21.492 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 10:59:24.851 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 10:59:24.852 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.displayEmployees () with arguments[s]= [{}]
+2020-02-22 10:59:24.852 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 10:59:24.861 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.displayEmployees () with arguments[s]= [{employees=[com.raj.pma.entities.Employee@3bac7239, com.raj.pma.entities.Employee@61849462, com.raj.pma.entities.Employee@496b2669]}]
+2020-02-22 10:59:24.861 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 10:59:26.098 DEBUG 1315 --- [http-nio-8080-exec-6] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 10:59:26.098 DEBUG 1315 --- [http-nio-8080-exec-6] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.displayEmployeeForm () with arguments[s]= [{}]
+2020-02-22 10:59:26.098 DEBUG 1315 --- [http-nio-8080-exec-6] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 10:59:26.099 DEBUG 1315 --- [http-nio-8080-exec-6] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.displayEmployeeForm () with arguments[s]= [{employee=com.raj.pma.entities.Employee@38a05143}]
+2020-02-22 10:59:26.099 DEBUG 1315 --- [http-nio-8080-exec-6] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 10:59:31.230 DEBUG 1315 --- [http-nio-8080-exec-8] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 10:59:31.230 DEBUG 1315 --- [http-nio-8080-exec-8] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.ProjectController.displayProjects () with arguments[s]= [{}]
+2020-02-22 10:59:31.230 DEBUG 1315 --- [http-nio-8080-exec-8] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 10:59:31.239 DEBUG 1315 --- [http-nio-8080-exec-8] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.ProjectController.displayProjects () with arguments[s]= [{projects=[com.raj.pma.entities.Project@6366987f, com.raj.pma.entities.Project@16511106]}]
+2020-02-22 10:59:31.239 DEBUG 1315 --- [http-nio-8080-exec-8] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:02:19.289  INFO 1315 --- [Thread-32] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-22 11:02:19.290  INFO 1315 --- [Thread-32] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-22 11:02:24.439  INFO 1315 --- [restartedMain] c.raj.pma.ProjectManagementApplication   : Starting ProjectManagementApplication on Rajs-MacBook-Air.local with PID 1315 (/Users/rajkhare/git/ASM-project-management/project-management/target/classes started by rajkhare in /Users/rajkhare/git/ASM-project-management/project-management)
+2020-02-22 11:02:24.439 DEBUG 1315 --- [restartedMain] c.raj.pma.ProjectManagementApplication   : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2020-02-22 11:02:24.439  INFO 1315 --- [restartedMain] c.raj.pma.ProjectManagementApplication   : The following profiles are active: dev
+2020-02-22 11:02:24.728  INFO 1315 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-02-22 11:02:24.754  INFO 1315 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26ms. Found 3 repository interfaces.
+2020-02-22 11:02:24.835  INFO 1315 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ff2b8a82] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-22 11:02:24.919  INFO 1315 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-22 11:02:24.933  INFO 1315 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 492 ms
+2020-02-22 11:02:25.173  INFO 1315 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-22 11:02:25.317  INFO 1315 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7f90d4e6, org.springframework.security.web.context.SecurityContextPersistenceFilter@20fb5a45, org.springframework.security.web.header.HeaderWriterFilter@ca2e3c5, org.springframework.security.web.csrf.CsrfFilter@4968727a, org.springframework.security.web.authentication.logout.LogoutFilter@55130e31, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5a592b85, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2fc050fe, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@512560f5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4ea1eeae, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@55868074, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5d08968c, org.springframework.security.web.session.SessionManagementFilter@2a0a06dc, org.springframework.security.web.access.ExceptionTranslationFilter@729384f0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@42c9cd10]
+2020-02-22 11:02:25.398  INFO 1315 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-22 11:02:25.406  WARN 1315 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-22 11:02:25.502  INFO 1315 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-22 11:02:25.523  INFO 1315 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-22 11:02:25.524  INFO 1315 --- [restartedMain] c.raj.pma.ProjectManagementApplication   : Started ProjectManagementApplication in 6.115 seconds (JVM running for 3039.141)
+2020-02-22 11:02:25.530  INFO 1315 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-22 11:02:35.702  INFO 1315 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-22 11:02:35.709  INFO 1315 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-02-22 11:02:35.712 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 11:02:35.712 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.HomeController.displayHome () with arguments[s]= [{}]
+2020-02-22 11:02:35.712 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:02:35.736 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.HomeController.displayHome () with arguments[s]= [{versionNumber=dev, projects=[com.raj.pma.entities.Project@c8aef84, com.raj.pma.entities.Project@1e468e3], projectStatusCount=[{"value":1,"label":"INPROGRESS"},{"value":1,"label":"NOTSTARTED"}], employeesProjectCount=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@58c0766c, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@19016c6d, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@5ee5db90]}]
+2020-02-22 11:02:35.736 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:02:37.494 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 11:02:37.494 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.displayEmployees () with arguments[s]= [{}]
+2020-02-22 11:02:37.494 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:02:37.503 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.displayEmployees () with arguments[s]= [{employees=[com.raj.pma.entities.Employee@261fae88, com.raj.pma.entities.Employee@73c733f6, com.raj.pma.entities.Employee@4e767d45]}]
+2020-02-22 11:02:37.503 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:02:38.685 DEBUG 1315 --- [http-nio-8080-exec-6] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 11:02:38.685 DEBUG 1315 --- [http-nio-8080-exec-6] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.displayEmployeeForm () with arguments[s]= [{}]
+2020-02-22 11:02:38.686 DEBUG 1315 --- [http-nio-8080-exec-6] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:02:38.687 DEBUG 1315 --- [http-nio-8080-exec-6] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.displayEmployeeForm () with arguments[s]= [{employee=com.raj.pma.entities.Employee@543bb782}]
+2020-02-22 11:02:38.687 DEBUG 1315 --- [http-nio-8080-exec-6] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:02:40.397 DEBUG 1315 --- [http-nio-8080-exec-8] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 11:02:40.398 DEBUG 1315 --- [http-nio-8080-exec-8] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.ProjectController.displayProjects () with arguments[s]= [{}]
+2020-02-22 11:02:40.398 DEBUG 1315 --- [http-nio-8080-exec-8] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:02:40.406 DEBUG 1315 --- [http-nio-8080-exec-8] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.ProjectController.displayProjects () with arguments[s]= [{projects=[com.raj.pma.entities.Project@6d1f1d9e, com.raj.pma.entities.Project@29074ed8]}]
+2020-02-22 11:02:40.406 DEBUG 1315 --- [http-nio-8080-exec-8] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:02:46.936 DEBUG 1315 --- [http-nio-8080-exec-3] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 11:02:46.937 DEBUG 1315 --- [http-nio-8080-exec-3] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.HomeController.displayHome () with arguments[s]= [{}]
+2020-02-22 11:02:46.937 DEBUG 1315 --- [http-nio-8080-exec-3] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:02:46.948 DEBUG 1315 --- [http-nio-8080-exec-3] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.HomeController.displayHome () with arguments[s]= [{versionNumber=dev, projects=[com.raj.pma.entities.Project@3753d9f7, com.raj.pma.entities.Project@4d51fa7b], projectStatusCount=[{"value":1,"label":"INPROGRESS"},{"value":1,"label":"NOTSTARTED"}], employeesProjectCount=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@6a0f735c, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@1b151f9b, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@79e5f2f2]}]
+2020-02-22 11:02:46.948 DEBUG 1315 --- [http-nio-8080-exec-3] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:02:49.511 DEBUG 1315 --- [http-nio-8080-exec-5] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 11:02:49.512 DEBUG 1315 --- [http-nio-8080-exec-5] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.displayEmployees () with arguments[s]= [{}]
+2020-02-22 11:02:49.512 DEBUG 1315 --- [http-nio-8080-exec-5] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:02:49.516 DEBUG 1315 --- [http-nio-8080-exec-5] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.displayEmployees () with arguments[s]= [{employees=[com.raj.pma.entities.Employee@7a3f9bfb, com.raj.pma.entities.Employee@36116e4d, com.raj.pma.entities.Employee@298e146]}]
+2020-02-22 11:02:49.516 DEBUG 1315 --- [http-nio-8080-exec-5] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:02:54.715 DEBUG 1315 --- [http-nio-8080-exec-6] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 11:02:54.715 DEBUG 1315 --- [http-nio-8080-exec-6] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.displayEmployees () with arguments[s]= [{}]
+2020-02-22 11:02:54.716 DEBUG 1315 --- [http-nio-8080-exec-6] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:02:54.721 DEBUG 1315 --- [http-nio-8080-exec-6] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.displayEmployees () with arguments[s]= [{employees=[com.raj.pma.entities.Employee@71f057cf, com.raj.pma.entities.Employee@7fa0395e, com.raj.pma.entities.Employee@2bc8a68b]}]
+2020-02-22 11:02:54.721 DEBUG 1315 --- [http-nio-8080-exec-6] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:02:59.361 DEBUG 1315 --- [http-nio-8080-exec-9] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 11:02:59.362 DEBUG 1315 --- [http-nio-8080-exec-9] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.HomeController.displayHome () with arguments[s]= [{}]
+2020-02-22 11:02:59.362 DEBUG 1315 --- [http-nio-8080-exec-9] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:02:59.372 DEBUG 1315 --- [http-nio-8080-exec-9] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.HomeController.displayHome () with arguments[s]= [{versionNumber=dev, projects=[com.raj.pma.entities.Project@316867e0, com.raj.pma.entities.Project@37998db3], projectStatusCount=[{"value":1,"label":"INPROGRESS"},{"value":1,"label":"NOTSTARTED"}], employeesProjectCount=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@9d6fb6f, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@66264c18, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@62dacefe]}]
+2020-02-22 11:02:59.372 DEBUG 1315 --- [http-nio-8080-exec-9] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:12:46.146  INFO 1315 --- [Thread-43] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-22 11:12:46.146  INFO 1315 --- [Thread-43] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-22 11:12:51.309  INFO 1315 --- [restartedMain] c.raj.pma.ProjectManagementApplication   : Starting ProjectManagementApplication on Rajs-MacBook-Air.local with PID 1315 (/Users/rajkhare/git/ASM-project-management/project-management/target/classes started by rajkhare in /Users/rajkhare/git/ASM-project-management/project-management)
+2020-02-22 11:12:51.309 DEBUG 1315 --- [restartedMain] c.raj.pma.ProjectManagementApplication   : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2020-02-22 11:12:51.309  INFO 1315 --- [restartedMain] c.raj.pma.ProjectManagementApplication   : The following profiles are active: dev
+2020-02-22 11:12:51.521  INFO 1315 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-02-22 11:12:51.534  INFO 1315 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 3 repository interfaces.
+2020-02-22 11:12:51.597  INFO 1315 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ff2b8a82] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-22 11:12:51.672  INFO 1315 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-22 11:12:51.685  INFO 1315 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 374 ms
+2020-02-22 11:12:51.928  INFO 1315 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-22 11:12:52.085  INFO 1315 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@387d03e9, org.springframework.security.web.context.SecurityContextPersistenceFilter@4e5e089e, org.springframework.security.web.header.HeaderWriterFilter@73ca3459, org.springframework.security.web.csrf.CsrfFilter@6dee8bf6, org.springframework.security.web.authentication.logout.LogoutFilter@46ba28c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6694ab3c, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3a4f47a3, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@58a74846, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7b559482, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@599f0f4d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@36289a1e, org.springframework.security.web.session.SessionManagementFilter@577688bd, org.springframework.security.web.access.ExceptionTranslationFilter@3f615bec, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7a229874]
+2020-02-22 11:12:52.145  INFO 1315 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-22 11:12:52.153  WARN 1315 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-22 11:12:52.246  INFO 1315 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-22 11:12:52.271  INFO 1315 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-22 11:12:52.282  INFO 1315 --- [restartedMain] c.raj.pma.ProjectManagementApplication   : Started ProjectManagementApplication in 6.014 seconds (JVM running for 3665.866)
+2020-02-22 11:12:52.287  INFO 1315 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-22 11:13:05.822  INFO 1315 --- [Thread-50] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-22 11:13:05.824  INFO 1315 --- [Thread-50] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-22 11:13:11.012  INFO 1315 --- [restartedMain] c.raj.pma.ProjectManagementApplication   : Starting ProjectManagementApplication on Rajs-MacBook-Air.local with PID 1315 (/Users/rajkhare/git/ASM-project-management/project-management/target/classes started by rajkhare in /Users/rajkhare/git/ASM-project-management/project-management)
+2020-02-22 11:13:11.012 DEBUG 1315 --- [restartedMain] c.raj.pma.ProjectManagementApplication   : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2020-02-22 11:13:11.013  INFO 1315 --- [restartedMain] c.raj.pma.ProjectManagementApplication   : The following profiles are active: dev
+2020-02-22 11:13:11.235  INFO 1315 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-02-22 11:13:11.248  INFO 1315 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 3 repository interfaces.
+2020-02-22 11:13:11.309  INFO 1315 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ff2b8a82] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-22 11:13:11.377  INFO 1315 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-22 11:13:11.388  INFO 1315 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 374 ms
+2020-02-22 11:13:11.596  INFO 1315 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-22 11:13:11.761  INFO 1315 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2eafc4b5, org.springframework.security.web.context.SecurityContextPersistenceFilter@7647613a, org.springframework.security.web.header.HeaderWriterFilter@7fcdf2d3, org.springframework.security.web.csrf.CsrfFilter@44b45720, org.springframework.security.web.authentication.logout.LogoutFilter@41837bfe, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7faba29e, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@c8095e5, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@23777af9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6d5c3964, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7d171576, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@ac6f1ed, org.springframework.security.web.session.SessionManagementFilter@102c3948, org.springframework.security.web.access.ExceptionTranslationFilter@d32d640, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@16e7ffed]
+2020-02-22 11:13:11.839  INFO 1315 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-22 11:13:11.863  WARN 1315 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-22 11:13:11.958  INFO 1315 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-22 11:13:11.982  INFO 1315 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-22 11:13:11.983  INFO 1315 --- [restartedMain] c.raj.pma.ProjectManagementApplication   : Started ProjectManagementApplication in 6.003 seconds (JVM running for 3685.567)
+2020-02-22 11:13:11.991  INFO 1315 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-22 11:14:24.583  INFO 1315 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-22 11:14:24.593  INFO 1315 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-02-22 11:14:24.596 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 11:14:24.597 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.HomeController.displayHome () with arguments[s]= [{}]
+2020-02-22 11:14:24.598 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:14:24.633 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.HomeController.displayHome () with arguments[s]= [{versionNumber=dev, projects=[com.raj.pma.entities.Project@4ca13e45, com.raj.pma.entities.Project@1bf98a2a], projectStatusCount=[{"value":1,"label":"INPROGRESS"},{"value":1,"label":"NOTSTARTED"}], employeesProjectCount=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@3753f0f4, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@5943c9cb, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@713f5647]}]
+2020-02-22 11:14:24.633 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:14:41.793 DEBUG 1315 --- [http-nio-8080-exec-10] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 11:14:41.793 DEBUG 1315 --- [http-nio-8080-exec-10] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.HomeController.displayHome () with arguments[s]= [{}]
+2020-02-22 11:14:41.793 DEBUG 1315 --- [http-nio-8080-exec-10] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:14:41.800 DEBUG 1315 --- [http-nio-8080-exec-10] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.HomeController.displayHome () with arguments[s]= [{versionNumber=dev, projects=[com.raj.pma.entities.Project@51cc248e, com.raj.pma.entities.Project@79ca5b7f], projectStatusCount=[{"value":1,"label":"INPROGRESS"},{"value":1,"label":"NOTSTARTED"}], employeesProjectCount=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@35ad8693, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@64dc5760, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@1f77f5f4]}]
+2020-02-22 11:14:41.800 DEBUG 1315 --- [http-nio-8080-exec-10] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:14:44.129 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 11:14:44.129 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.displayEmployees () with arguments[s]= [{}]
+2020-02-22 11:14:44.129 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:14:44.138 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.displayEmployees () with arguments[s]= [{employees=[com.raj.pma.entities.Employee@73efaf84, com.raj.pma.entities.Employee@2fefe137, com.raj.pma.entities.Employee@7033cbe]}]
+2020-02-22 11:14:44.138 DEBUG 1315 --- [http-nio-8080-exec-1] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:14:49.768 DEBUG 1315 --- [http-nio-8080-exec-6] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 11:14:49.768 DEBUG 1315 --- [http-nio-8080-exec-6] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.ProjectController.displayProjects () with arguments[s]= [{}]
+2020-02-22 11:14:49.768 DEBUG 1315 --- [http-nio-8080-exec-6] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:14:49.777 DEBUG 1315 --- [http-nio-8080-exec-6] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.ProjectController.displayProjects () with arguments[s]= [{projects=[com.raj.pma.entities.Project@25457bf5, com.raj.pma.entities.Project@1fd7455a]}]
+2020-02-22 11:14:49.777 DEBUG 1315 --- [http-nio-8080-exec-6] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:15:46.383 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 11:15:46.383 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.ProjectController.displayProjects () with arguments[s]= [{}]
+2020-02-22 11:15:46.383 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:15:46.387 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.ProjectController.displayProjects () with arguments[s]= [{projects=[com.raj.pma.entities.Project@674f4f73, com.raj.pma.entities.Project@1c08daf4]}]
+2020-02-22 11:15:46.388 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:15:47.757 DEBUG 1315 --- [http-nio-8080-exec-5] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 11:15:47.758 DEBUG 1315 --- [http-nio-8080-exec-5] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.HomeController.displayHome () with arguments[s]= [{}]
+2020-02-22 11:15:47.758 DEBUG 1315 --- [http-nio-8080-exec-5] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:15:47.774 DEBUG 1315 --- [http-nio-8080-exec-5] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.HomeController.displayHome () with arguments[s]= [{versionNumber=dev, projects=[com.raj.pma.entities.Project@108b32cc, com.raj.pma.entities.Project@642b4a36], projectStatusCount=[{"value":1,"label":"INPROGRESS"},{"value":1,"label":"NOTSTARTED"}], employeesProjectCount=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@4ca61575, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@595e04bb, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@239c696]}]
+2020-02-22 11:15:47.774 DEBUG 1315 --- [http-nio-8080-exec-5] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:16:03.354 DEBUG 1315 --- [http-nio-8080-exec-7] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 11:16:03.354 DEBUG 1315 --- [http-nio-8080-exec-7] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.HomeController.displayHome () with arguments[s]= [{}]
+2020-02-22 11:16:03.354 DEBUG 1315 --- [http-nio-8080-exec-7] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:16:03.361 DEBUG 1315 --- [http-nio-8080-exec-7] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.HomeController.displayHome () with arguments[s]= [{versionNumber=dev, projects=[com.raj.pma.entities.Project@5f0de0e2, com.raj.pma.entities.Project@2e4fbb76], projectStatusCount=[{"value":1,"label":"INPROGRESS"},{"value":1,"label":"NOTSTARTED"}], employeesProjectCount=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@6d93bd5a, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@b6e001, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@4cdd2205]}]
+2020-02-22 11:16:03.361 DEBUG 1315 --- [http-nio-8080-exec-7] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:16:05.465 DEBUG 1315 --- [http-nio-8080-exec-8] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 11:16:05.465 DEBUG 1315 --- [http-nio-8080-exec-8] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.displayEmployees () with arguments[s]= [{}]
+2020-02-22 11:16:05.465 DEBUG 1315 --- [http-nio-8080-exec-8] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:16:05.469 DEBUG 1315 --- [http-nio-8080-exec-8] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.displayEmployees () with arguments[s]= [{employees=[com.raj.pma.entities.Employee@36133e08, com.raj.pma.entities.Employee@1e6df81, com.raj.pma.entities.Employee@7efec22]}]
+2020-02-22 11:16:05.469 DEBUG 1315 --- [http-nio-8080-exec-8] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:16:06.717 DEBUG 1315 --- [http-nio-8080-exec-10] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 11:16:06.717 DEBUG 1315 --- [http-nio-8080-exec-10] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.displayEmployeeForm () with arguments[s]= [{}]
+2020-02-22 11:16:06.718 DEBUG 1315 --- [http-nio-8080-exec-10] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:16:06.718 DEBUG 1315 --- [http-nio-8080-exec-10] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.displayEmployeeForm () with arguments[s]= [{employee=com.raj.pma.entities.Employee@12e790e}]
+2020-02-22 11:16:06.718 DEBUG 1315 --- [http-nio-8080-exec-10] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:16:08.285 DEBUG 1315 --- [http-nio-8080-exec-3] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 11:16:08.285 DEBUG 1315 --- [http-nio-8080-exec-3] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.ProjectController.displayProjects () with arguments[s]= [{}]
+2020-02-22 11:16:08.285 DEBUG 1315 --- [http-nio-8080-exec-3] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:16:08.289 DEBUG 1315 --- [http-nio-8080-exec-3] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.ProjectController.displayProjects () with arguments[s]= [{projects=[com.raj.pma.entities.Project@32bceef8, com.raj.pma.entities.Project@67857a8b]}]
+2020-02-22 11:16:08.289 DEBUG 1315 --- [http-nio-8080-exec-3] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:16:09.589 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 11:16:09.589 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.ProjectController.displayProjectForm () with arguments[s]= [{}]
+2020-02-22 11:16:09.590 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:16:09.593 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.ProjectController.displayProjectForm () with arguments[s]= [{project=com.raj.pma.entities.Project@39e5e9d7, allEmployees=[com.raj.pma.entities.Employee@850d183, com.raj.pma.entities.Employee@30e851de, com.raj.pma.entities.Employee@f4f81a3]}]
+2020-02-22 11:16:09.593 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:17:03.011 DEBUG 1315 --- [http-nio-8080-exec-8] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 11:17:03.012 DEBUG 1315 --- [http-nio-8080-exec-8] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.displayEmployees () with arguments[s]= [{}]
+2020-02-22 11:17:03.012 DEBUG 1315 --- [http-nio-8080-exec-8] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:17:03.015 DEBUG 1315 --- [http-nio-8080-exec-8] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.displayEmployees () with arguments[s]= [{employees=[com.raj.pma.entities.Employee@1f273b54, com.raj.pma.entities.Employee@4340035c, com.raj.pma.entities.Employee@196ada0c]}]
+2020-02-22 11:17:03.016 DEBUG 1315 --- [http-nio-8080-exec-8] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:17:04.101 DEBUG 1315 --- [http-nio-8080-exec-2] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 11:17:04.101 DEBUG 1315 --- [http-nio-8080-exec-2] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.displayEmployeeForm () with arguments[s]= [{}]
+2020-02-22 11:17:04.102 DEBUG 1315 --- [http-nio-8080-exec-2] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:17:04.102 DEBUG 1315 --- [http-nio-8080-exec-2] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.displayEmployeeForm () with arguments[s]= [{employee=com.raj.pma.entities.Employee@5f3d3023}]
+2020-02-22 11:17:04.102 DEBUG 1315 --- [http-nio-8080-exec-2] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:17:23.626 DEBUG 1315 --- [http-nio-8080-exec-3] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 11:17:23.626 DEBUG 1315 --- [http-nio-8080-exec-3] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.createEmployee () with arguments[s]= [com.raj.pma.entities.Employee@6e480e04, {employee=com.raj.pma.entities.Employee@6e480e04, org.springframework.validation.BindingResult.employee=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2020-02-22 11:17:23.627 DEBUG 1315 --- [http-nio-8080-exec-3] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:17:23.656 DEBUG 1315 --- [http-nio-8080-exec-3] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.createEmployee () with arguments[s]= [com.raj.pma.entities.Employee@6e480e04, {employee=com.raj.pma.entities.Employee@6e480e04, org.springframework.validation.BindingResult.employee=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2020-02-22 11:17:23.656 DEBUG 1315 --- [http-nio-8080-exec-3] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:17:23.675 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 11:17:23.675 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.displayEmployeeForm () with arguments[s]= [{}]
+2020-02-22 11:17:23.676 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:17:23.676 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.displayEmployeeForm () with arguments[s]= [{employee=com.raj.pma.entities.Employee@1573e365}]
+2020-02-22 11:17:23.676 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:17:26.019 DEBUG 1315 --- [http-nio-8080-exec-6] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 11:17:26.021 DEBUG 1315 --- [http-nio-8080-exec-6] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.displayEmployees () with arguments[s]= [{}]
+2020-02-22 11:17:26.021 DEBUG 1315 --- [http-nio-8080-exec-6] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:17:26.024 DEBUG 1315 --- [http-nio-8080-exec-6] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.displayEmployees () with arguments[s]= [{employees=[com.raj.pma.entities.Employee@3f49ea51, com.raj.pma.entities.Employee@13685d84, com.raj.pma.entities.Employee@638326da, com.raj.pma.entities.Employee@27bf9c53]}]
+2020-02-22 11:17:26.025 DEBUG 1315 --- [http-nio-8080-exec-6] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:17:53.042 DEBUG 1315 --- [http-nio-8080-exec-5] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 11:17:53.042 DEBUG 1315 --- [http-nio-8080-exec-5] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.displayEmployees () with arguments[s]= [{}]
+2020-02-22 11:17:53.042 DEBUG 1315 --- [http-nio-8080-exec-5] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:17:53.046 DEBUG 1315 --- [http-nio-8080-exec-5] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.displayEmployees () with arguments[s]= [{employees=[com.raj.pma.entities.Employee@21d793a8, com.raj.pma.entities.Employee@6936476d, com.raj.pma.entities.Employee@66810a98, com.raj.pma.entities.Employee@68353e4a]}]
+2020-02-22 11:17:53.046 DEBUG 1315 --- [http-nio-8080-exec-5] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:17:54.306 DEBUG 1315 --- [http-nio-8080-exec-8] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 11:17:54.306 DEBUG 1315 --- [http-nio-8080-exec-8] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.ProjectController.displayProjects () with arguments[s]= [{}]
+2020-02-22 11:17:54.308 DEBUG 1315 --- [http-nio-8080-exec-8] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:17:54.313 DEBUG 1315 --- [http-nio-8080-exec-8] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.ProjectController.displayProjects () with arguments[s]= [{projects=[com.raj.pma.entities.Project@1dc8165a, com.raj.pma.entities.Project@52e71350]}]
+2020-02-22 11:17:54.314 DEBUG 1315 --- [http-nio-8080-exec-8] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:17:56.180 DEBUG 1315 --- [http-nio-8080-exec-2] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 11:17:56.180 DEBUG 1315 --- [http-nio-8080-exec-2] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.HomeController.displayHome () with arguments[s]= [{}]
+2020-02-22 11:17:56.180 DEBUG 1315 --- [http-nio-8080-exec-2] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:17:56.205 DEBUG 1315 --- [http-nio-8080-exec-2] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.HomeController.displayHome () with arguments[s]= [{versionNumber=dev, projects=[com.raj.pma.entities.Project@33d5d68a, com.raj.pma.entities.Project@1d08417f], projectStatusCount=[{"value":1,"label":"INPROGRESS"},{"value":1,"label":"NOTSTARTED"}], employeesProjectCount=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@2c84de1a, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@77064227, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@41a8fc82, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@1fd1cd2e]}]
+2020-02-22 11:17:56.206 DEBUG 1315 --- [http-nio-8080-exec-2] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:18:00.659 DEBUG 1315 --- [http-nio-8080-exec-7] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 11:18:00.660 DEBUG 1315 --- [http-nio-8080-exec-7] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.ProjectController.displayProjects () with arguments[s]= [{}]
+2020-02-22 11:18:00.660 DEBUG 1315 --- [http-nio-8080-exec-7] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:18:00.663 DEBUG 1315 --- [http-nio-8080-exec-7] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.ProjectController.displayProjects () with arguments[s]= [{projects=[com.raj.pma.entities.Project@2a4cf93c, com.raj.pma.entities.Project@39a929c1]}]
+2020-02-22 11:18:00.663 DEBUG 1315 --- [http-nio-8080-exec-7] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:18:04.223 DEBUG 1315 --- [http-nio-8080-exec-6] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 11:18:04.224 DEBUG 1315 --- [http-nio-8080-exec-6] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.displayEmployees () with arguments[s]= [{}]
+2020-02-22 11:18:04.224 DEBUG 1315 --- [http-nio-8080-exec-6] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:18:04.228 DEBUG 1315 --- [http-nio-8080-exec-6] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.displayEmployees () with arguments[s]= [{employees=[com.raj.pma.entities.Employee@55ed79d1, com.raj.pma.entities.Employee@79f822e6, com.raj.pma.entities.Employee@12979fbb, com.raj.pma.entities.Employee@5fc98986]}]
+2020-02-22 11:18:04.229 DEBUG 1315 --- [http-nio-8080-exec-6] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:18:05.600 DEBUG 1315 --- [http-nio-8080-exec-5] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 11:18:05.600 DEBUG 1315 --- [http-nio-8080-exec-5] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.ProjectController.displayProjects () with arguments[s]= [{}]
+2020-02-22 11:18:05.600 DEBUG 1315 --- [http-nio-8080-exec-5] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:18:05.603 DEBUG 1315 --- [http-nio-8080-exec-5] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.ProjectController.displayProjects () with arguments[s]= [{projects=[com.raj.pma.entities.Project@1e62ebf5, com.raj.pma.entities.Project@4bf557b2]}]
+2020-02-22 11:18:05.603 DEBUG 1315 --- [http-nio-8080-exec-5] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:18:06.696 DEBUG 1315 --- [http-nio-8080-exec-8] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 11:18:06.696 DEBUG 1315 --- [http-nio-8080-exec-8] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.ProjectController.displayProjectForm () with arguments[s]= [{}]
+2020-02-22 11:18:06.696 DEBUG 1315 --- [http-nio-8080-exec-8] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:18:06.699 DEBUG 1315 --- [http-nio-8080-exec-8] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.ProjectController.displayProjectForm () with arguments[s]= [{project=com.raj.pma.entities.Project@579381ad, allEmployees=[com.raj.pma.entities.Employee@241c3f4b, com.raj.pma.entities.Employee@12e1cd42, com.raj.pma.entities.Employee@10eac190, com.raj.pma.entities.Employee@11e54f06]}]
+2020-02-22 11:18:06.699 DEBUG 1315 --- [http-nio-8080-exec-8] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:18:30.338 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 11:18:30.339 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.ProjectController.createProject () with arguments[s]= [com.raj.pma.entities.Project@167e8844, {project=com.raj.pma.entities.Project@167e8844, org.springframework.validation.BindingResult.project=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2020-02-22 11:18:30.339 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:18:30.370 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.ProjectController.createProject () with arguments[s]= [com.raj.pma.entities.Project@167e8844, {project=com.raj.pma.entities.Project@167e8844, org.springframework.validation.BindingResult.project=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2020-02-22 11:18:30.370 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:18:30.384 DEBUG 1315 --- [http-nio-8080-exec-2] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 11:18:30.384 DEBUG 1315 --- [http-nio-8080-exec-2] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.ProjectController.displayProjects () with arguments[s]= [{}]
+2020-02-22 11:18:30.384 DEBUG 1315 --- [http-nio-8080-exec-2] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:18:30.387 DEBUG 1315 --- [http-nio-8080-exec-2] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.ProjectController.displayProjects () with arguments[s]= [{projects=[com.raj.pma.entities.Project@14c88fed, com.raj.pma.entities.Project@7742587f, com.raj.pma.entities.Project@1222310f]}]
+2020-02-22 11:18:30.387 DEBUG 1315 --- [http-nio-8080-exec-2] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:18:33.001 DEBUG 1315 --- [http-nio-8080-exec-7] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 11:18:33.001 DEBUG 1315 --- [http-nio-8080-exec-7] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.HomeController.displayHome () with arguments[s]= [{}]
+2020-02-22 11:18:33.001 DEBUG 1315 --- [http-nio-8080-exec-7] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:18:33.012 DEBUG 1315 --- [http-nio-8080-exec-7] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.HomeController.displayHome () with arguments[s]= [{versionNumber=dev, projects=[com.raj.pma.entities.Project@7bf74bc4, com.raj.pma.entities.Project@172f45e8, com.raj.pma.entities.Project@2478c137], projectStatusCount=[{"value":1,"label":"INPROGRESS"},{"value":2,"label":"NOTSTARTED"}], employeesProjectCount=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@e008fd0, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@5bebee6d, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@582255a1, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@52d62f7a]}]
+2020-02-22 11:18:33.012 DEBUG 1315 --- [http-nio-8080-exec-7] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:19:04.372 DEBUG 1315 --- [http-nio-8080-exec-3] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 11:19:04.372 DEBUG 1315 --- [http-nio-8080-exec-3] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.displayEmployees () with arguments[s]= [{}]
+2020-02-22 11:19:04.372 DEBUG 1315 --- [http-nio-8080-exec-3] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:19:04.376 DEBUG 1315 --- [http-nio-8080-exec-3] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.EmployeeController.displayEmployees () with arguments[s]= [{employees=[com.raj.pma.entities.Employee@32c8b9c2, com.raj.pma.entities.Employee@686c8d7d, com.raj.pma.entities.Employee@209460f, com.raj.pma.entities.Employee@1f08b122]}]
+2020-02-22 11:19:04.377 DEBUG 1315 --- [http-nio-8080-exec-3] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:19:05.598 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 11:19:05.598 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.ProjectController.displayProjects () with arguments[s]= [{}]
+2020-02-22 11:19:05.598 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:19:05.603 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.ProjectController.displayProjects () with arguments[s]= [{projects=[com.raj.pma.entities.Project@1d37591e, com.raj.pma.entities.Project@6f365cf8, com.raj.pma.entities.Project@131e6183]}]
+2020-02-22 11:19:05.603 DEBUG 1315 --- [http-nio-8080-exec-4] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:19:06.782 DEBUG 1315 --- [http-nio-8080-exec-9] c.r.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2020-02-22 11:19:06.782 DEBUG 1315 --- [http-nio-8080-exec-9] c.r.pma.logging.ApplicationLoggerAspect  : ************** Before Method Excecution ************* 
+ com.raj.pma.controllers.HomeController.displayHome () with arguments[s]= [{}]
+2020-02-22 11:19:06.782 DEBUG 1315 --- [http-nio-8080-exec-9] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
+2020-02-22 11:19:06.793 DEBUG 1315 --- [http-nio-8080-exec-9] c.r.pma.logging.ApplicationLoggerAspect  : ************** After Method Excecution ************* 
+ com.raj.pma.controllers.HomeController.displayHome () with arguments[s]= [{versionNumber=dev, projects=[com.raj.pma.entities.Project@716560fd, com.raj.pma.entities.Project@c1b2939, com.raj.pma.entities.Project@2578290d], projectStatusCount=[{"value":1,"label":"INPROGRESS"},{"value":2,"label":"NOTSTARTED"}], employeesProjectCount=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@1e986b92, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@7864636, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@57f21a85, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@3c2d9ed]}]
+2020-02-22 11:19:06.793 DEBUG 1315 --- [http-nio-8080-exec-9] c.r.pma.logging.ApplicationLoggerAspect  : --------------------------------------
+ 
+ 
+
