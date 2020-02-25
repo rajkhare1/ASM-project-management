@@ -43,6 +43,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 		   		+ "from user_accounts where username=?")
 		   .dataSource(datasource)
 		   .passwordEncoder(bCryptEncoder);//this is decoding the password in query retrieval
+		
+		
 	}
 
 //	@Bean
@@ -63,7 +65,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 //			.antMatchers("/").authenticated().and().formLogin();
 			.antMatchers("/","/**").permitAll()
 			.and() 
-			.formLogin();  
+			.formLogin(); 
+		http.csrf().disable();
 		
 //		http.csrf().disable();
 //		http.headers().frameOptions().disable();

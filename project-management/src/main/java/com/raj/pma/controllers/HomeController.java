@@ -40,7 +40,7 @@ private String ver;
 		Map<String, Object> map = new HashMap<>();
 		
 		// we are querying database for projects
-		List<Project> projects = proRepo.findAll();
+		Iterable<Project> projects = proRepo.findAll();
 		model.addAttribute("projects",projects);
 		
 		List<ChartData> projectChartData = proRepo.getProjectStatus();

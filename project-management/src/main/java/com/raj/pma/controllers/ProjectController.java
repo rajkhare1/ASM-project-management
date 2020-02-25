@@ -29,7 +29,7 @@ public class ProjectController {
 		Project aProject = new Project();
 		model.addAttribute("project", aProject);
 		
-		List<Employee> employees = empService.getAll();
+		Iterable<Employee> employees = empService.getAll();
 		model.addAttribute("allEmployees", employees);
 		return "projects/new-project";
 	}
@@ -45,7 +45,7 @@ public class ProjectController {
 	
 	@GetMapping
 	public String displayProjects(Model model) {
-		List<Project> projects = proService.getAll();
+		Iterable<Project> projects = proService.getAll();
 		model.addAttribute("projects", projects);
 		return "projects/list-projects";
 	}

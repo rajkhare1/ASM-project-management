@@ -12,8 +12,8 @@ import com.raj.pma.entities.Employee;
 
 public interface EmployeeRepository extends CrudRepository<Employee,Long>{
 	
-	@Override
-	List<Employee> findAll();
+//	@Override
+//	List<Employee> findAll();
 	
 	@Query(nativeQuery = true,value = "SELECT e.first_name as firstName, e.last_name as lastName, COUNT(pe.employee_id) as projectCount " + 
 			"FROM employee e " + 
